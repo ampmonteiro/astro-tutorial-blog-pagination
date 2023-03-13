@@ -8,7 +8,7 @@ Final result based on [Build a Blog](https://docs.astro.build/en/tutorial/0-intr
 
 This project is not online to see, like the tutorial suggests to do
 
-The unit 6 is not included as well as last past of unit 5 (add a RSS feed ).
+The unit 6 is not included as well as last part of unit 5 (add a RSS feed ).
 
 ## Images:
 
