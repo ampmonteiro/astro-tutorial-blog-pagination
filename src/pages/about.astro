@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const pageTitle = 'About Me';
+const identity = {
+  firstName: 'Agostinho',
+  country: 'Portugal',
+  occupation: 'Web Developer',
+  hobbies: ['IT books', 'Watch Footbal / Soccer'],
+};
+
+const skills = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'Angular',
+  'Vue',
+  'Astro',
+  'Build MPA',
+  'Build SPA',
+];
+
+const happy = true;
+const finished = true;
+
+// const skillColor = 'navy';
+// const fontWeight = 'bold';
+// const textCase = 'uppercase';
+
+const skillStyles = {
+  skillColor: 'navy',
+  fontWeight: 'bold',
+  textCase: 'uppercase',
+};
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <p>Here are a few facts about me:</p>
+  <ul>
+    <li>My name is {identity.firstName}.</li>
+    <li>
+      I live in {identity.country} and I work as a {
+        identity.occupation
+      }.
+    </li>
+    {
+      identity.hobbies.length < 3 && (
+        <li>
+          Two of my hobbies are: {identity.hobbies[0]} and{' '}
+          {identity.hobbies[1]}
+        </li>
+      )
+    }
+  </ul>
+  <p>My skills are:</p>
+  <ul>
+    {skills.map((skill) => <li class="skill">{skill}</li>)}
+  </ul>
+
+  {happy && <p>I am happy to be learning Astro!</p>}
+
+  {finished && <p>I finished this tutorial!</p>}
+</BaseLayout>
