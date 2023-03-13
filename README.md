@@ -12,6 +12,8 @@ The unit 6 is not included as well as last past of unit 5 (add a RSS feed ).
 
 ## Images:
 
+![Blog](blog.png)
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
